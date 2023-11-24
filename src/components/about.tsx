@@ -7,7 +7,7 @@ export const About: FC = () => {
       <div className="border-2">
         <Image alt="me" src="/me.jpeg" width={300} height={400} />
       </div>
-      <div className="text-xl min-w-[300px] max-w-[600px] p-5">
+      <div className="text-xl min-w-[300px] max-w-[800px] p-5">
         <p>Hi! My name is Artur Bednarczyk. Internet knows me as Isur.</p>
         <br />
         <p>
