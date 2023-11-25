@@ -12,7 +12,7 @@ export const Contact: FC = () => {
           <FaGithub /> Isur
         </a>
         <a
-          href="https://www.linkedin.com/in/artur-bednarczyk-4a2318160/"
+          href="https://www.linkedin.com/in/isur/"
           className="flex flex-row text-xl gap-4"
         >
           <FaLinkedin /> Artur Bednarczyk
