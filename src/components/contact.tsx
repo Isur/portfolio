@@ -9,19 +9,25 @@ export const Contact: FC = () => {
           href="https://github.com/Isur"
           className="flex flex-row text-xl gap-4"
         >
-          <FaGithub /> Isur
+          <div className="hover:shadow-xd flex gap-4">
+            <FaGithub /> Isur
+          </div>
         </a>
         <a
           href="https://www.linkedin.com/in/isur/"
           className="flex flex-row text-xl gap-4"
         >
-          <FaLinkedin /> Artur Bednarczyk
+          <div className="hover:shadow-xd flex gap-4">
+            <FaLinkedin /> Artur Bednarczyk
+          </div>
         </a>
         <a
           href="mailto:bednarczykartur96@gmail.com"
           className="flex flex-row text-xl gap-4"
         >
-          <FaEnvelope /> bednarczykartur96@gmail.com
+          <div className="hover:shadow-xd flex gap-4">
+            <FaEnvelope /> bednarczykartur96@gmail.com
+          </div>
         </a>
       </div>
     </div>

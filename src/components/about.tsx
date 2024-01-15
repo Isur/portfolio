@@ -1,10 +1,9 @@
 import { FC } from "react";
 import Image from "next/image";
-
 export const About: FC = () => {
   return (
     <div className="flex flex-col flex-wrap gap-10 justify-center items-center p-10">
-      <div className="border-2">
+      <div className="border-2 shadow-xd">
         <Image alt="me" src="/me.jpeg" width={300} height={400} />
       </div>
       <div className="text-xl min-w-[300px] max-w-[800px] p-5">

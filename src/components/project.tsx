@@ -82,9 +82,11 @@ export const Project: FC = () => {
 
 const ProjectItem: FC<ProjectItemProps> = (props) => {
   return (
-    <div className="flex flex-col w-full min-w-[300px] max-w-[900px] border-2 min-h-[200px] hover:outline">
+    <div className="hover:shadow-xd flex flex-col w-full min-w-[300px] max-w-[900px] border-2 min-h-[200px]">
       <div className="p-5">
-        <h1 className="text-2xl"> {props.title} </h1>
+        <h1 className="flex p-2 text-2xl justify-center sm:justify-start">
+          {props.title}
+        </h1>
         <p className="text-xs">
           {props.dateRange} - <b>{props.roleInProject}</b> at{" "}
           <b>

@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 const Link: FC<{ name: string; href: string }> = ({ href, name }) => (
-  <a className="text-xl underline" href={href}>
+  <a className="hover:shadow-xd text-xl underline" href={href}>
     {name}
   </a>
 );

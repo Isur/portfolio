@@ -2,9 +2,9 @@ import { FC } from "react";
 
 export const Navbar: FC = () => {
   return (
-    <nav className=" z-50 flex flex-wrap w-full justify-between items-center p-4 top-0 border-b-0">
+    <nav className=" z-50 flex flex-wrap w-full justify-center sm:justify-between items-center p-4 top-0 border-b-0">
       <p className="text-4xl font-bold border-2 p-2">isur.dev</p>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap justify-center">
         <NavbarItem title="About Me" href="#about" />
         <NavbarItem title="Skills" href="#skills" />
         <NavbarItem title="Projects" href="#projects" />
@@ -24,7 +24,7 @@ const NavbarItem: FC<NavbarItemProps> = ({ title, href }) => {
   return (
     <a
       href={href}
-      className="px-4 border-2 m-1 p-1 hover:underline hover:bg-background2"
+      className="hover:shadow-xd px-4 border-2 m-1 p-1 hover:underline"
     >
       {title}
     </a>

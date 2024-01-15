@@ -31,8 +31,8 @@ interface SkillsSetProps {
 }
 const SkillsSet: FC<SkillsSetProps> = ({ skills, title }) => {
   return (
-    <div className="flex flex-col gap-5 border-2 p-5 w-[300px] bg-background hover:outline">
-      <h1 className="text-3xl"> {title} </h1>
+    <div className="hover:shadow-xd flex flex-col gap-5 border-2 p-5 w-[300px] bg-background">
+      <h1 className="text-3xl flex justify-center"> {title} </h1>
       <ul className="list-disc p-2">
         {skills.map((skill) => (
           <li key={skill}> {skill} </li>
