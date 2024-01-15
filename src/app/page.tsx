@@ -1,5 +1,14 @@
 "use client";
-import { About, Contact, Navbar, Project, Skills, Footer, Section } from "@/components";
+import {
+  About,
+  Contact,
+  Navbar,
+  Project,
+  Skills,
+  Footer,
+  Section,
+  Personal,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -12,14 +21,27 @@ export default function Home() {
         <Section id="skills" title="Skills" prev="#about" next="#projects">
           <Skills />
         </Section>
-        <Section id="projects" title="Projects" prev="#skills" next="#contact">
+        <Section
+          id="projects"
+          title="Work Projects"
+          prev="#skills"
+          next="#contact"
+        >
           <Project />
         </Section>
-        <Section id="contact" title="Contact" prev="#projects">
+        <Section
+          id="personal"
+          title="Personal"
+          prev="#projects"
+          next="#contact"
+        >
+          <Personal />
+        </Section>
+        <Section id="contact" title="Contact" prev="#personal">
           <Contact />
         </Section>
       </div>
       <Footer />
     </main>
-  )
+  );
 }

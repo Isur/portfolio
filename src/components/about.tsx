@@ -11,10 +11,10 @@ export const About: FC = () => {
         <p>Hi! My name is Artur Bednarczyk. Internet knows me as Isur.</p>
         <br />
         <p>
-          I am a software developer with almost six years of hands-on experience
-          in the business world. With a decade-long coding journey, I have
-          actively contributed to numerous projects, demonstrating versatility
-          and leadership in various roles.
+          My professional carreer started {new Date().getFullYear() - 2018}{" "}
+          years ago. Now I am Senior Software Developer at Estimity. Mostly
+          working with TypeScript and Python on backend stuff and creating new
+          aweseome startups.
         </p>
         <br />
         <p>
@@ -23,20 +23,9 @@ export const About: FC = () => {
         </p>
         <br />
         <p>
-          Beyond being a profession, software development is my passion, fueling
-          my commitment to continuous learning and skill enhancement.
-        </p>
-        <br />
-        <p>
-          Sharing knowledge with my team is not just a duty; it is a source of
-          joy for me. My goal is to bring this enthusiasm, expertise, and
-          collaborative spirit to a team.
-        </p>
-        <br />
-        <p>
-          Right now I am working as a Senior Software Developer and Team Leader
-          at Estimity. Mostly working with TypeScript and Python on backend
-          stuff and creating new aweseome startups.
+          Throughout my career I have participated in many projects - mostly,
+          but not only, related to the web. Currently my focus resolves around
+          backend side of applications.
         </p>
       </div>
     </div>
