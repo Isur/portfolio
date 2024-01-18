@@ -1,4 +1,5 @@
 import { FC } from "react";
+import Image from "next/image";
 
 const Link: FC<{ name: string; href: string }> = ({ href, name }) => (
   <a className="hover:shadow-xd text-xl underline" href={href}>
@@ -25,6 +26,7 @@ export const Personal: FC = () => {
         url="https://github.com/Isur/dotfiles"
         description="My dotfiles with install script that should work on debian and arch based linux distros, and on mac os. For debian based there is also server install with configs useful on servers that I connect via ssh."
       />
+      <Image src="/dotfiles.jpeg" alt="dotfiles" width={3440} height={1440} />
       <SomethingPersonal
         name="Web App Setup"
         url="https://github.com/Isur/web-app-setup"
