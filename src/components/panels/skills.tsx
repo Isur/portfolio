@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Card, CardContent, CardTitle } from "../ui/card";
-import { WrenchIcon } from "lucide-react";
+import { Cpu, Languages, Workflow, Wrench } from "lucide-react";
 
 const technologies = [
   "TypeScript",
@@ -18,10 +18,14 @@ export const Skills: FC = () => {
   return (
     <div className="flex flex-col gap-10 p-10">
       <div className="flex flex-wrap grid-cols-2 gap-5 justify-center">
-        <SkillCard title="Technologies" skills={technologies} />
-        <SkillCard title="Tools" skills={tools} />
-        <SkillCard title="Development" skills={development} />
-        <SkillCard title="Languages" skills={languages} />
+        <SkillCard title="Technologies" skills={technologies} icon={<Cpu />} />
+        <SkillCard title="Tools" skills={tools} icon={<Wrench />} />
+        <SkillCard
+          title="Development"
+          skills={development}
+          icon={<Workflow />}
+        />
+        <SkillCard title="Languages" skills={languages} icon={<Languages />} />
       </div>
     </div>
   );
@@ -30,13 +34,14 @@ export const Skills: FC = () => {
 interface SkillsSetProps {
   title: string;
   skills: string[];
+  icon?: JSX.Element;
 }
 
-const SkillCard: FC<SkillsSetProps> = ({ skills, title }) => {
+const SkillCard: FC<SkillsSetProps> = ({ skills, title, icon }) => {
   return (
     <Card className="w-[300px]">
       <CardTitle className="flex flex-row gap-5">
-        <WrenchIcon />
+        {icon}
         {title}
       </CardTitle>
       <CardContent>
