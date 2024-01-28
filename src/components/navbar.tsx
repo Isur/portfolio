@@ -4,7 +4,14 @@ import { Button } from "./ui/button";
 import { ModeToggle } from "@/components/toggleMode";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { MenuIcon } from "lucide-react";
+import {
+  CircleUserRound,
+  Contact,
+  Cpu,
+  FolderGit2,
+  MenuIcon,
+  SearchCheck,
+} from "lucide-react";
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -36,41 +43,52 @@ export const Navbar = () => {
           onClick={close}
           variant="outline"
           asChild
-          className="w-[160px] sm:w-auto"
+          className="w-[160px] sm:w-auto flex flex-row gap-3"
         >
-          <Link href="#about"> About Me </Link>
+          <Link href="#about">
+            <SearchCheck /> About Me
+          </Link>
         </Button>
         <Button
           onClick={close}
           variant="outline"
           asChild
-          className="w-[160px] sm:w-auto"
+          className="w-[160px] sm:w-auto flex flex-row gap-3"
         >
-          <Link href="#skills"> Skills </Link>
+          <Link href="#skills">
+            <Cpu /> Skills
+          </Link>
         </Button>
         <Button
           onClick={close}
           variant="outline"
           asChild
-          className="w-[160px] sm:w-auto"
+          className="w-[160px] sm:w-auto flex flex-row gap-3"
         >
-          <Link href="#projects"> Projects </Link>
+          <Link href="#projects">
+            <FolderGit2 /> Projects
+          </Link>
         </Button>
         <Button
           onClick={close}
           variant="outline"
           asChild
-          className="w-[160px] sm:w-auto"
+          className="w-[160px] sm:w-auto flex flex-row gap-3"
         >
-          <Link href="#personal"> Personal </Link>
+          <Link href="#personal">
+            <CircleUserRound /> Personal
+          </Link>
         </Button>
         <Button
           onClick={close}
           variant="outline"
           asChild
-          className="w-[160px] sm:w-auto"
+          className="w-[160px] sm:w-auto flex flex-row gap-3"
         >
-          <Link href="#contact"> Contact </Link>
+          <Link href="#contact">
+            <Contact />
+            Contact
+          </Link>
         </Button>
         <ModeToggle />
       </div>
