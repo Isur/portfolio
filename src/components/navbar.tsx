@@ -43,7 +43,7 @@ export const Navbar = () => {
           onClick={close}
           variant="outline"
           asChild
-          className="w-[160px] sm:w-auto flex flex-row gap-3"
+          className="w-[160px] sm:w-auto flex flex-row justify-between gap-3"
         >
           <Link href="#about">
             <SearchCheck /> About Me
@@ -53,7 +53,7 @@ export const Navbar = () => {
           onClick={close}
           variant="outline"
           asChild
-          className="w-[160px] sm:w-auto flex flex-row gap-3"
+          className="w-[160px] sm:w-auto flex flex-row justify-between gap-3"
         >
           <Link href="#skills">
             <Cpu /> Skills
@@ -63,7 +63,7 @@ export const Navbar = () => {
           onClick={close}
           variant="outline"
           asChild
-          className="w-[160px] sm:w-auto flex flex-row gap-3"
+          className="w-[160px] sm:w-auto flex flex-row justify-between gap-3"
         >
           <Link href="#projects">
             <FolderGit2 /> Projects
@@ -73,7 +73,7 @@ export const Navbar = () => {
           onClick={close}
           variant="outline"
           asChild
-          className="w-[160px] sm:w-auto flex flex-row gap-3"
+          className="w-[160px] sm:w-auto flex flex-row justify-between gap-3"
         >
           <Link href="#personal">
             <CircleUserRound /> Personal
@@ -83,7 +83,7 @@ export const Navbar = () => {
           onClick={close}
           variant="outline"
           asChild
-          className="w-[160px] sm:w-auto flex flex-row gap-3"
+          className="w-[160px] sm:w-auto flex flex-row justify-between gap-3"
         >
           <Link href="#contact">
             <Contact />
