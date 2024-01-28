@@ -9,14 +9,9 @@ interface SectionProps {
 
 export const Section: FC<PropsWithChildren<SectionProps>> = (props) => {
   return (
-    <section className="mt-5 pt-5">
-      <a id={props.id} />
-      <div className="flex justify-center">
-        <p className="text-4xl font-bold">{props.title}</p>
-      </div>
-      <div className="flex flex-col items-center justify-between w-full">
-        {props.children}
-      </div>
+    <section id={props.id} className="flex flex-col w-screen">
+      <h1 className="flex justify-center text-5xl p-5">{props.title}</h1>
+      <div className="p-5 flex justify-center">{props.children}</div>
     </section>
   );
 };
