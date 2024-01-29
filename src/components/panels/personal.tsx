@@ -36,7 +36,7 @@ export const Personal: FC = () => {
         description="My dotfiles with install script that should work on debian and arch based linux distros, and on mac os. For debian based there is also server install with configs useful on servers that I connect via ssh. Installation script that prepares configs, install apps, setup ssh keys and prepare directory structures."
       />
       <Image
-        src="/dotfiles.jpeg"
+        src="/dotfiles.png"
         alt="dotfiles"
         className="rounded-md object-cover"
         width={3440}
