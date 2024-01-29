@@ -3,6 +3,14 @@ import { FC } from "react";
 import Image from "next/image";
 import { Github } from "lucide-react";
 import { Card, CardContent, CardTitle } from "../ui/card";
+import {
+  DialogContent,
+  DialogOverlay,
+  Dialog,
+  DialogTrigger,
+  DialogTitle,
+  DialogClose,
+} from "../ui/dialog";
 
 const Link: FC<{ name: string; href: string }> = ({ href, name }) => (
   <a
@@ -35,13 +43,29 @@ export const Personal: FC = () => {
         url="https://github.com/Isur/dotfiles"
         description="My dotfiles with install script that should work on debian and arch based linux distros, and on mac os. For debian based there is also server install with configs useful on servers that I connect via ssh. Installation script that prepares configs, install apps, setup ssh keys and prepare directory structures."
       />
-      <Image
-        src="/dotfiles.png"
-        alt="dotfiles"
-        className="rounded-md object-cover"
-        width={3440}
-        height={1440}
-      />
+      <Dialog>
+        <DialogTrigger asChild>
+          <Image
+            src="/dotfiles.png"
+            alt="dotfiles"
+            className="rounded-md object-cover"
+            width={344 * 3}
+            height={144 * 3}
+          />
+        </DialogTrigger>
+        <DialogOverlay />
+        <DialogContent className="w-max">
+          <DialogTitle> Dotfiles </DialogTitle>
+          <Image
+            src="/dotfiles.png"
+            alt="dotfiles"
+            className="rounded-md object-cover"
+            width={3440}
+            height={1440}
+          />
+          <DialogClose> Close </DialogClose>
+        </DialogContent>
+      </Dialog>
       <SomethingPersonal
         name="Web App Setup"
         url="https://github.com/Isur/web-app-setup"
