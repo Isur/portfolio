@@ -1,10 +1,3 @@
-import { Navbar } from "@/components/navbar";
-import { About } from "@/components/panels/about";
-import { Projects } from "@/components/panels/projects";
-import { Section } from "@/components/section";
-import { Skills } from "@/components/panels/skills";
-import { Personal } from "@/components/panels/personal";
-import { Footer } from "@/components/footer";
 import {
   CircleUserRound,
   Cpu,
@@ -12,6 +5,13 @@ import {
   SearchCheck,
   ContactIcon,
 } from "lucide-react";
+import { Navbar } from "@/components/navbar";
+import { About } from "@/components/panels/about";
+import { Projects } from "@/components/panels/projects";
+import { Section } from "@/components/section";
+import { Skills } from "@/components/panels/skills";
+import { Personal } from "@/components/panels/personal";
+import { Footer } from "@/components/footer";
 import { Contact } from "@/components/panels/contact";
 
 export default function Home() {

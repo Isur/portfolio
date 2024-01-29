@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { FolderIcon } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -7,7 +8,6 @@ import {
   CardTitle,
 } from "../ui/card";
 import { Badge } from "../ui/badge";
-import { FolderIcon } from "lucide-react";
 
 interface ProjectItemProps {
   title: string;

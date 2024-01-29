@@ -1,8 +1,8 @@
 "use client";
 import { FC } from "react";
 import Image from "next/image";
-import { Card, CardContent, CardTitle } from "../ui/card";
 import { Github } from "lucide-react";
+import { Card, CardContent, CardTitle } from "../ui/card";
 
 const Link: FC<{ name: string; href: string }> = ({ href, name }) => (
   <a

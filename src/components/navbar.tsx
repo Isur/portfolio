@@ -1,9 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Button } from "./ui/button";
-import { ModeToggle } from "@/components/toggleMode";
 import { useState } from "react";
-import { cn } from "@/lib/utils";
 import {
   CircleUserRound,
   Contact,
@@ -12,6 +9,9 @@ import {
   MenuIcon,
   SearchCheck,
 } from "lucide-react";
+import { ModeToggle } from "@/components/toggleMode";
+import { cn } from "@/lib/utils";
+import { Button } from "./ui/button";
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);

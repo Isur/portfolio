@@ -1,6 +1,6 @@
 import { FC } from "react";
-import { Card, CardContent, CardTitle } from "../ui/card";
 import { Cpu, Languages, Workflow, Wrench } from "lucide-react";
+import { Card, CardContent, CardTitle } from "../ui/card";
 
 const technologies = [
   "TypeScript",
