@@ -10,7 +10,7 @@ interface SectionProps {
 
 export const Section: FC<PropsWithChildren<SectionProps>> = (props) => {
   return (
-    <section id={props.id} className="flex flex-col w-screen">
+    <section id={props.id} className="flex flex-col w-full">
       <h1 className="flex justify-center items-center text-5xl p-5 gap-5">
         {props.icon}
         {props.title}

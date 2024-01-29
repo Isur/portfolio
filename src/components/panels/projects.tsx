@@ -77,7 +77,7 @@ const PROJECTS: ProjectItemProps[] = [
 
 export const Projects: FC = () => {
   return (
-    <div className="flex flex-col grow gap-5 p-10 justify-center items-center w-screen">
+    <div className="flex flex-col grow gap-5 p-10 justify-center items-center w-full">
       {PROJECTS.map((project) => (
         <ProjectItemCard key={project.title} {...project} />
       ))}
