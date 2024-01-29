@@ -10,7 +10,32 @@ const jetbrains = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "isur.dev",
-  description: 'Artur "Isur" Bednarczyk Portfolio',
+  description: 'Artur "Isur" Bednarczyk Portfolio Website',
+  applicationName: "isur.dev",
+  generator: "nextjs, react, typescript",
+  keywords: [
+    "isur",
+    "artur",
+    "bednarczyk",
+    "portfolio",
+    "website",
+    "personal",
+    "projects",
+    "skills",
+    "nodejs",
+    "typescript",
+    "dotfiles",
+    "contact",
+    "dotfiles",
+  ],
+  creator: 'Artur "Isur" Bednarczyk',
+  publisher: 'Artur "Isur" Bednarczyk',
+  formatDetection: {
+    telephone: false,
+    address: false,
+    email: true,
+    url: true,
+  },
 };
 
 export default function RootLayout({

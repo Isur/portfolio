@@ -48,7 +48,7 @@ export const Personal: FC = () => {
           <Image
             src="/dotfiles.png"
             alt="dotfiles"
-            className="rounded-md object-cover"
+            className="rounded-md object-cover hover:cursor-pointer"
             width={344 * 3}
             height={144 * 3}
           />
