@@ -54,10 +54,33 @@ export const Personal: FC = () => {
           />
         </DialogTrigger>
         <DialogOverlay />
-        <DialogContent className="w-max">
-          <DialogTitle> Dotfiles </DialogTitle>
+        <DialogContent className="">
+          <DialogTitle> MacOS - Yabai and sketchbar </DialogTitle>
           <Image
             src="/dotfiles.png"
+            alt="dotfiles"
+            className="rounded-md object-cover"
+            width={3440}
+            height={1440}
+          />
+          <DialogClose> Close </DialogClose>
+        </DialogContent>
+      </Dialog>
+      <Dialog>
+        <DialogTrigger asChild>
+          <Image
+            src="/i3wm.png"
+            alt="dotfiles"
+            className="rounded-md object-cover hover:cursor-pointer"
+            width={344 * 3}
+            height={144 * 3}
+          />
+        </DialogTrigger>
+        <DialogOverlay />
+        <DialogContent className="">
+          <DialogTitle> Linux - i3wm </DialogTitle>
+          <Image
+            src="/i3wm.png"
             alt="dotfiles"
             className="rounded-md object-cover"
             width={3440}
