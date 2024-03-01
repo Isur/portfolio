@@ -1,5 +1,12 @@
 import { FC } from "react";
-import { Cpu, Languages, Workflow, Wrench, MemoryStick } from "lucide-react";
+import {
+  Cpu,
+  Languages,
+  Workflow,
+  Wrench,
+  MemoryStick,
+  PieChart,
+} from "lucide-react";
 import { Card, CardContent, CardTitle } from "../ui/card";
 
 const programming = ["TypeScript", "Python", "JavaScript", "SQL", "Bash"];
@@ -34,7 +41,7 @@ export const Skills: FC = () => {
           icon={<Workflow />}
         />
         <SkillCard title="Tools" skills={tools} icon={<Wrench />} />
-        <SkillCard title="Other" skills={others} icon={<Languages />} />
+        <SkillCard title="Other" skills={others} icon={<PieChart />} />
         <SkillCard title="Languages" skills={languages} icon={<Languages />} />
       </div>
     </div>
