@@ -70,7 +70,7 @@ const PROJECTS: ProjectItemProps[] = [
       "SQLite",
       "Arduino",
     ],
-    roleInProject: "Tech Leader",
+    roleInProject: "Senior Software Developer",
     company: "Estimity",
   },
 ];
