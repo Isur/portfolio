@@ -10,10 +10,10 @@ export const About = () => {
         <p>Hi! My name is Artur Bednarczyk. Internet knows me as Isur.</p>
         <br />
         <p>
-          My professional carreer started {new Date().getFullYear() - 2018}{" "}
-          years ago. Now I am Senior Software Developer at Estimity. Mostly
-          working with TypeScript and Python on backend stuff and creating new
-          aweseome startups.
+          My professional career started {new Date().getFullYear() - 2018} years
+          ago. Now I am Senior Software Developer at Estimity. Mostly working
+          with TypeScript and Python on backend stuff and creating new awesome
+          startups.
         </p>
         <br />
         <p>
