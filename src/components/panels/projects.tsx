@@ -104,7 +104,7 @@ const ProjectItemCard: FC<ProjectItemProps> = (props) => {
         </CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col gap-5">
-        <p> {props.description} </p>
+        <p className="text-pretty"> {props.description} </p>
         <div className="flex gap-3 flex-wrap">
           {props.techStack.map((item) => (
             <Badge variant="outline" key={item}>
