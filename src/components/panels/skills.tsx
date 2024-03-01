@@ -1,30 +1,40 @@
 import { FC } from "react";
-import { Cpu, Languages, Workflow, Wrench } from "lucide-react";
+import { Cpu, Languages, Workflow, Wrench, MemoryStick } from "lucide-react";
 import { Card, CardContent, CardTitle } from "../ui/card";
 
+const programming = ["TypeScript", "Python", "JavaScript", "SQL", "Bash"];
 const technologies = [
-  "TypeScript",
-  "Python",
-  "SQL",
-  "Node",
+  "Node.js",
+  "Express.js",
+  "Nest.js",
+  "Next.js",
+  "FastAPI",
   "React",
-  "and more...",
+  "Jest",
+  "Pytest",
 ];
-const tools = ["Docker", "Git", "Github", "Linux", "Nginx", "and more..."];
+const development = ["Agile", "Scrum", "TDD", "REST", "CI/CD"];
+const tools = ["Git", "GitHub", "Docker", "Linux", "nginx"];
+const others = ["Microservices", "AWS", "GCP"];
 const languages = ["Polish - native", "English - C1"];
-const development = ["Agile", "CI/CD", "REST", "TDD", "and more..."];
 
 export const Skills: FC = () => {
   return (
     <div className="flex flex-col gap-10 p-10">
       <div className="flex flex-wrap grid-cols-2 gap-5 justify-center">
-        <SkillCard title="Technologies" skills={technologies} icon={<Cpu />} />
-        <SkillCard title="Tools" skills={tools} icon={<Wrench />} />
+        <SkillCard title="Programming" skills={programming} icon={<Cpu />} />
+        <SkillCard
+          title="Technologies"
+          skills={technologies}
+          icon={<MemoryStick />}
+        />
         <SkillCard
           title="Development"
           skills={development}
           icon={<Workflow />}
         />
+        <SkillCard title="Tools" skills={tools} icon={<Wrench />} />
+        <SkillCard title="Other" skills={others} icon={<Languages />} />
         <SkillCard title="Languages" skills={languages} icon={<Languages />} />
       </div>
     </div>

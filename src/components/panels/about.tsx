@@ -6,7 +6,7 @@ export const About = () => {
       <div className="border outline">
         <Image alt="me" src="/me.jpeg" width={300} height={400} />
       </div>
-      <div className="text-xl min-w-[300px] max-w-[800px] p-5">
+      <div className="text-xl min-w-[300px] max-w-[800px] p-5 text-pretty">
         <p>Hi! My name is Artur Bednarczyk. Internet knows me as Isur.</p>
         <br />
         <p>
