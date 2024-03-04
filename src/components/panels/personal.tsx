@@ -29,11 +29,11 @@ const SomethingPersonal: FC<{
   description: string;
   skills?: string[];
 }> = ({ name, url, description, skills }) => (
-  <Card className="flex flex-col grow justify-center items-center">
+  <Card className="w-full flex flex-col grow justify-center items-center">
     <CardTitle className="w-full">
       <Link href={url} name={name} />
     </CardTitle>
-    <CardContent className="text-pretty"> {description} </CardContent>
+    <CardContent className="w-full text-pretty">{description}</CardContent>
     <div className="flex gap-3 flex-wrap w-full p-4 pt-0">
       {skills &&
         skills.map((skill) => (
@@ -46,13 +46,28 @@ const SomethingPersonal: FC<{
 );
 
 export const Personal: FC = () => {
+  const videoId = "yScu9DZ6I8s";
   return (
     <div className="flex flex-col grow gap-5 p-10 justify-center items-center min-w-[300px] max-w-[900px]">
       <SomethingPersonal
         name="Video Chat Bubbles"
         skills={["React", "TypeScript", "Tailwind", "Vite"]}
-        url="https://github.com/Isur/video-chat-bubbles"
-        description="App that allows to create video chat bubbles that might be used on videos/streams. App has green background and typing creates bubbles like in chat. There is also possibility to change some settings like font size or padding."
+        url="https://chat-bubbles.isur.dev"
+        description="App that allows to create video chat bubbles that might be used on videos/streams. App has green background and typing creates bubbles like in chat. There is also possibility to change some settings like font size or padding, position of bubbles. Notes is also available to write some notes. All settings and notes are saved in local storage."
+      />
+      <SomethingPersonal
+        name="YouTube @IsurTyping"
+        skills={["Typing", "Keyboard"]}
+        url="https://youtube.com/@IsurTyping"
+        description="My YouTube channel where I upload typing videos. Daily short and weekly full video."
+      />
+      <iframe
+        width="100%"
+        height="315"
+        src={`https://www.youtube.com/embed/${videoId}`}
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
       />
       <SomethingPersonal
         name="Dotfiles"
