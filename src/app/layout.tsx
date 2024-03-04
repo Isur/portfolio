@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Footer } from "@/components/footer";
+import { Navbar } from "@/components/navbar";
 
 const jetbrains = JetBrains_Mono({
   subsets: ["latin"],
@@ -53,7 +55,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="flex flex-col h-screen justify-center items-center scroll-smooth">
+            <Navbar />
+            <div className="flex-col grow overflow-auto scroll-smooth gap-16 w-screen">
+              {children}
+            </div>
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>
