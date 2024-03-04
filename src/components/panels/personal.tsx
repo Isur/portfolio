@@ -59,7 +59,7 @@ export const Personal: FC = () => {
         name="YouTube @IsurTyping"
         skills={["Typing", "Keyboard"]}
         url="https://youtube.com/@IsurTyping"
-        description="My YouTube channel where I upload typing videos. Daily short and weekly full video."
+        description="My YouTube channel where I upload typing videos. Daily short and weekly full video. I utilize here my other project - video chat bubbles."
       />
       <iframe
         width="100%"
