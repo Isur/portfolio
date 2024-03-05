@@ -73,6 +73,15 @@ const PROJECTS: ProjectItemProps[] = [
     roleInProject: "Senior Software Developer",
     company: "Estimity",
   },
+  {
+    title: "Growi - Virtual Offices",
+    description:
+      "I contribute to the team by leveraging my expertise in backend/frontend development and TypeScript. Additionally, I independently handle the setup of CI/CD pipelines and environments.",
+    dateRange: "2022 - ongoing",
+    techStack: ["TypeScript", "Next.js", "Node.js", "PostgreSQL", "AWS"],
+    roleInProject: "Environment Setup, CI/CD",
+    company: "Estimity",
+  },
 ];
 
 export const Projects: FC = () => {
