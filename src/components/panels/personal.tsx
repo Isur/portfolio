@@ -46,7 +46,7 @@ const SomethingPersonal: FC<{
 );
 
 export const Personal: FC = () => {
-  const videoId = "yScu9DZ6I8s";
+  const videoId = "FzBBJnDQbQo";
   return (
     <div className="flex flex-col grow gap-5 p-10 justify-center items-center min-w-[300px] max-w-[900px]">
       <SomethingPersonal
@@ -63,7 +63,7 @@ export const Personal: FC = () => {
       />
       <iframe
         width="100%"
-        height="315"
+        className="aspect-video"
         src={`https://www.youtube.com/embed/${videoId}`}
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
