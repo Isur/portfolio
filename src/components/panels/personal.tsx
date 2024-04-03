@@ -46,7 +46,7 @@ const SomethingPersonal: FC<{
 );
 
 export const Personal: FC = () => {
-  const videoId = "FzBBJnDQbQo";
+  const videoId = "HqAlHG1nJRE";
   return (
     <div className="flex flex-col grow gap-5 p-10 justify-center items-center min-w-[300px] max-w-[900px]">
       <SomethingPersonal
@@ -75,29 +75,6 @@ export const Personal: FC = () => {
         url="https://github.com/Isur/dotfiles"
         description="My dotfiles with install script that should work on debian and arch based linux distros, and on mac os. For debian based there is also server install with configs useful on servers that I connect via ssh. Installation script that prepares configs, install apps, setup ssh keys and prepare directory structures."
       />
-      <Dialog>
-        <DialogTrigger asChild>
-          <Image
-            src="/dotfiles.png"
-            alt="dotfiles"
-            className="rounded-md object-cover hover:cursor-pointer"
-            width={344 * 3}
-            height={144 * 3}
-          />
-        </DialogTrigger>
-        <DialogOverlay />
-        <DialogContent className="">
-          <DialogTitle> MacOS - Yabai and sketchbar </DialogTitle>
-          <Image
-            src="/dotfiles.png"
-            alt="dotfiles"
-            className="rounded-md object-cover"
-            width={3440}
-            height={1440}
-          />
-          <DialogClose> Close </DialogClose>
-        </DialogContent>
-      </Dialog>
       <Dialog>
         <DialogTrigger asChild>
           <Image
