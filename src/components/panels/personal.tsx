@@ -46,9 +46,21 @@ const SomethingPersonal: FC<{
 );
 
 export const Personal: FC = () => {
-  const videoId = "HqAlHG1nJRE";
+  const videoId = "Kw24In6xeTo";
   return (
     <div className="flex flex-col grow gap-5 p-10 justify-center items-center min-w-[300px] max-w-[900px]">
+      <SomethingPersonal
+        name="Blog"
+        skills={["Writing", "Development"]}
+        url="https://blog.isur.dev"
+        description="My blog where I write about software development, packages I created."
+      />
+      <SomethingPersonal
+        name="file-json-validator"
+        skills={["Translations", "i18n", "TypeScript", "npm package"]}
+        url="https://www.npmjs.com/package/file-json-validator"
+        description="Npm package to validate json files and directory structure. It will help you with keeping translations or other files in correct shape."
+      />
       <SomethingPersonal
         name="Video Chat Bubbles"
         skills={["React", "TypeScript", "Tailwind", "Vite"]}
@@ -57,7 +69,7 @@ export const Personal: FC = () => {
       />
       <SomethingPersonal
         name="YouTube @IsurTyping"
-        skills={["Typing", "Keyboard"]}
+        skills={["Typing", "Keyboard", "Video editing"]}
         url="https://youtube.com/@IsurTyping"
         description="My YouTube channel where I upload typing videos. Daily short and weekly full video. I utilize here my other project - video chat bubbles."
       />

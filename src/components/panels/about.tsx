@@ -13,7 +13,19 @@ export const About = () => {
           My professional career started {new Date().getFullYear() - 2018} years
           ago. Now I am Senior Software Developer at Estimity. Mostly working
           with TypeScript and Python on backend stuff and creating new awesome
-          startups.
+          startups. Author of{" "}
+          <a className="underline" href="https://blog.isur.dev">
+            https://blog.isur.dev
+          </a>{" "}
+          and npm package{" "}
+          <a
+            className="underline"
+            href="https://www.npmjs.com/package/file-json-validator"
+            target="_blank"
+          >
+            file-json-validator
+          </a>
+          .
         </p>
         <br />
         <p>

@@ -8,6 +8,7 @@ import {
   FolderGit2,
   MenuIcon,
   SearchCheck,
+  RssIcon,
 } from "lucide-react";
 import { ModeToggle } from "@/components/toggleMode";
 import { cn } from "@/lib/utils";
@@ -39,6 +40,16 @@ export const Navbar = () => {
           "sm:flex",
         )}
       >
+        <Button
+          onClick={close}
+          variant="outline"
+          asChild
+          className="w-[160px] sm:w-auto flex flex-row justify-between gap-3"
+        >
+          <Link href="https://blog.isur.dev" target="_blank">
+            <RssIcon /> Blog
+          </Link>
+        </Button>
         <Button
           onClick={close}
           variant="outline"
