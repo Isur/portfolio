@@ -46,7 +46,7 @@ const SomethingPersonal: FC<{
 );
 
 export const Personal: FC = () => {
-  const videoId = "Kw24In6xeTo";
+  const videoId = "7GJktvVaytI";
   return (
     <div className="flex flex-col grow gap-5 p-10 justify-center items-center min-w-[300px] max-w-[900px]">
       <SomethingPersonal
