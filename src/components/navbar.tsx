@@ -76,8 +76,8 @@ export const Navbar = () => {
           asChild
           className="w-[160px] sm:w-auto flex flex-row justify-between gap-3"
         >
-          <Link href="#projects">
-            <FolderGit2 /> Projects
+          <Link href="#career">
+            <FolderGit2 /> Career
           </Link>
         </Button>
         <Button

@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import { Navbar } from "@/components/navbar";
 import { About } from "@/components/panels/about";
-import { Projects } from "@/components/panels/projects";
+import { Career } from "@/components/panels/projects";
 import { Section } from "@/components/section";
 import { Skills } from "@/components/panels/skills";
 import { Personal } from "@/components/panels/personal";
@@ -25,8 +25,8 @@ export default function Home() {
         <Section id="skills" title="Skills" icon={<Cpu size={32} />}>
           <Skills />
         </Section>
-        <Section id="projects" title="Projects" icon={<FolderGit2 size={32} />}>
-          <Projects />
+        <Section id="career" title="Career" icon={<FolderGit2 size={32} />}>
+          <Career />
         </Section>
         <Section
           id="personal"
