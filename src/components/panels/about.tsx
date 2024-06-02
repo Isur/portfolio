@@ -7,48 +7,46 @@ export const About = () => {
         <Image alt="me" src="/me.jpeg" width={300} height={400} />
       </div>
       <div className="text-xl min-w-[300px] max-w-[800px] p-5 text-pretty">
-        <p>Hi! My name is Artur Bednarczyk. Internet knows me as Isur.</p>
-        <br />
         <p>
-          My professional career started {new Date().getFullYear() - 2018} years
-          ago. Now I am Senior Software Developer at Estimity. Mostly working
-          with TypeScript and Python on backend stuff and creating new awesome
-          startups.
+          Hi! My name is Artur Bednarczyk. On the Internet, I use the nickname
+          Isur.
         </p>
         <br />
         <p>
-          Author of{" "}
-          <a className="underline" href="https://blog.isur.dev" target="_blank">
-            https://blog.isur.dev
+          My first lines of code were written over a decade ago. Professionally,
+          my career started {new Date().getFullYear() - 2018} years ago. I am
+          currently a Senior Software Developer at Estimity, where I primarily
+          work with TypeScript and Python to create new and exciting startups.
+        </p>
+        <br />
+        <p>
+          Personally, I am the author of a small{" "}
+          <a href="https://blog.isur.dev" target="_blank" className="underline">
+            Blog
           </a>
-          , npm package{" "}
+          , an npm package called{" "}
           <a
-            className="underline"
             href="https://www.npmjs.com/package/file-json-validator"
             target="_blank"
+            className="underline"
           >
             file-json-validator
-          </a>{" "}
-          and{" "}
-          <a
-            className="underline"
-            href="https://chat-bubbles.isur.dev"
-            target="_blank"
-          >
-            https://chat-bubbles.isur.dev
-          </a>{" "}
-          tool.
+          </a>
+          , and a tool for creating nice typing effects in videos:{" "}
+          <a href="https://chat-bubbles.isur.dev" className="underline">
+            Chat Bubbles
+          </a>
         </p>
         <br />
         <p>
-          I have finished my master degree at the Silesian University of
-          Technology.
+          Education-wise, I completed my master&apos;s degree at the Silesian
+          University of Technology.
         </p>
         <br />
         <p>
-          Throughout my career I have participated in many projects - mostly,
-          but not only, related to the web. Currently my focus resolves around
-          backend side of applications.
+          Throughout my time with code, I have participated in many
+          projects—mostly related to the web, but not exclusively. You can read
+          more about my career and other personal projects below.
         </p>
       </div>
     </div>

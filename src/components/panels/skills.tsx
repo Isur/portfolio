@@ -1,49 +1,29 @@
 import { FC } from "react";
-import {
-  Cpu,
-  Languages,
-  Workflow,
-  Wrench,
-  MemoryStick,
-  PieChart,
-} from "lucide-react";
+import { Cpu, Languages, Workflow, Wrench } from "lucide-react";
 import { Card, CardContent, CardTitle } from "../ui/card";
 
 const programming = ["TypeScript", "Python", "JavaScript", "SQL", "Bash"];
-const technologies = [
-  "Node.js",
-  "Express.js",
-  "Nest.js",
-  "Next.js",
-  "FastAPI",
-  "React",
-  "Jest",
-  "Pytest",
-];
-const development = ["Agile", "Scrum", "TDD", "REST", "CI/CD"];
+const development = ["Agile", "TDD", "REST", "CI/CD"];
 const tools = ["Git", "GitHub", "Docker", "Linux", "nginx"];
-const others = ["Microservices", "AWS", "GCP"];
 const languages = ["Polish - native", "English - C1"];
 
 export const Skills: FC = () => {
   return (
-    <div className="flex flex-col gap-10 p-10">
+    <div className="flex flex-col gap-10 p-10 place-items-center">
       <div className="flex flex-wrap grid-cols-2 gap-5 justify-center">
         <SkillCard title="Programming" skills={programming} icon={<Cpu />} />
-        <SkillCard
-          title="Technologies"
-          skills={technologies}
-          icon={<MemoryStick />}
-        />
         <SkillCard
           title="Development"
           skills={development}
           icon={<Workflow />}
         />
         <SkillCard title="Tools" skills={tools} icon={<Wrench />} />
-        <SkillCard title="Other" skills={others} icon={<PieChart />} />
         <SkillCard title="Languages" skills={languages} icon={<Languages />} />
       </div>
+      <p>
+        More about technologies I&apos;ve been using later when I talk about
+        projects.
+      </p>
     </div>
   );
 };
