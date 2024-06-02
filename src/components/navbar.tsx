@@ -23,7 +23,7 @@ export const Navbar = () => {
     <nav className="z-50 flex sm:flex-row flex-col flex-wrap w-full justify-center sm:justify-between items-center p-4 top-0 border-b-0 outline outline-primary-foreground gap-5">
       <div className="w-full sm:w-[250px] flex flex-row justify-between items-center gap-5">
         <p className="text-4xl font-bold p-2 outline outline-primary-foreground">
-          isur.dev
+          A.isur.dev
         </p>
         <Button
           variant="ghost"
