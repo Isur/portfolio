@@ -132,7 +132,7 @@ export const Career: FC = () => {
         developers and helping them with React, Node.
       </p>
 
-      <h1 className="text-xl"> ALM Services Technology Group </h1>
+      <h1 className="text-3xl"> ALM Services Technology Group </h1>
 
       {PROJECTS_ALM.map((project) => (
         <ProjectItemCard key={project.title} {...project} />
@@ -146,7 +146,7 @@ export const Career: FC = () => {
         experienced developers.
       </p>
 
-      <h1 className="text-xl"> Estimity </h1>
+      <h1 className="text-3xl"> Estimity </h1>
 
       {PROJECTS_ESTIMITY.map((project) => (
         <ProjectItemCard key={project.title} {...project} />

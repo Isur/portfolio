@@ -17,6 +17,7 @@ const Link: FC<{ name: string; href: string }> = ({ href, name }) => (
   <a
     className="hover:shadow-xd text-xl underline flex flex-row gap-5"
     href={href}
+    target="_blank"
   >
     <Github />
     {name}
@@ -46,7 +47,7 @@ const SomethingPersonal: FC<{
 );
 
 export const Personal: FC = () => {
-  const videoId = "7GJktvVaytI";
+  const videoId = "wnWMS4X1R7E";
   return (
     <div className="flex flex-col grow gap-5 p-10 justify-center items-center min-w-[300px] max-w-[900px]">
       <SomethingPersonal
@@ -67,11 +68,34 @@ export const Personal: FC = () => {
         url="https://chat-bubbles.isur.dev"
         description="App that allows to create video chat bubbles that might be used on videos/streams. App has green background and typing creates bubbles like in chat. There is also possibility to change some settings like font size or padding, position of bubbles. Notes is also available to write some notes. All settings and notes are saved in local storage."
       />
+      <Dialog>
+        <DialogTrigger asChild>
+          <Image
+            src="/video-chat-bubble.jpeg"
+            alt="chat-bubbles"
+            className="rounded-md object-cover hover:cursor-pointer"
+            width={211 * 3}
+            height={142 * 3}
+          />
+        </DialogTrigger>
+        <DialogOverlay />
+        <DialogContent className="">
+          <DialogTitle> Video Chat Bubbles </DialogTitle>
+          <Image
+            src="/video-chat-bubble.jpeg"
+            alt="chat-bubbles"
+            className="rounded-md object-cover"
+            width={2117}
+            height={1420}
+          />
+          <DialogClose> Close </DialogClose>
+        </DialogContent>
+      </Dialog>
       <SomethingPersonal
         name="YouTube @IsurTyping"
         skills={["Typing", "Keyboard", "Video editing"]}
         url="https://youtube.com/@IsurTyping"
-        description="My YouTube channel where I upload typing videos. Daily short and weekly full video. I utilize here my other project - video chat bubbles."
+        description="My YouTube channel where I upload typing videos of me practing with tools like monkeytype or typing club. I utilize here my other project - video chat bubbles."
       />
       <iframe
         width="100%"
@@ -110,18 +134,6 @@ export const Personal: FC = () => {
           <DialogClose> Close </DialogClose>
         </DialogContent>
       </Dialog>
-      <SomethingPersonal
-        name="Web App Setup"
-        skills={["nginx", "docker", "CI/CD"]}
-        url="https://github.com/Isur/web-app-setup"
-        description="Web application server starter - nginx, certbot, letsencrypt, postgres, example apps and github workflows for testing and deploying. Easy to use and modify for new projects that are deployed on linux server."
-      />
-      <SomethingPersonal
-        name="TS Start"
-        skills={["TypeScript", "Docker", "jest"]}
-        url="https://github.com/Isur/ts-start"
-        description="Starter for Typescript app with scripts, swc, jest, eslint, prettier, dockerfile, docker compose and all configs. Great start for PoC or some testing without need to setup everything from scratch."
-      />
     </div>
   );
 };
