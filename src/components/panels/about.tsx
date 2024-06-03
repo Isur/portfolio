@@ -33,7 +33,11 @@ export const About = () => {
             file-json-validator
           </a>
           , and a tool for creating nice typing effects in videos:{" "}
-          <a href="https://chat-bubbles.isur.dev" className="underline">
+          <a
+            href="https://chat-bubbles.isur.dev"
+            className="underline"
+            target="_blank"
+          >
             Chat Bubbles
           </a>
         </p>

@@ -8,6 +8,7 @@ export const Contact: FC = () => {
       <div className="flex flex-col gap-10 max-w-full">
         <a
           href="https://github.com/Isur"
+          target="_blank"
           className="flex flex-row text-l gap-4"
         >
           <Card className="flex gap-4 p-4 w-[400px]">
@@ -16,6 +17,7 @@ export const Contact: FC = () => {
         </a>
         <a
           href="https://www.linkedin.com/in/isur/"
+          target="_blank"
           className="flex flex-row text-l gap-4"
         >
           <Card className="flex gap-4 p-4 w-[400px]">
@@ -24,6 +26,7 @@ export const Contact: FC = () => {
         </a>
         <a
           href="mailto:bednarczykartur96@gmail.com"
+          target="_blank"
           className="flex flex-row text-l gap-4"
         >
           <Card className="flex gap-4 p-4 w-[400px]">
