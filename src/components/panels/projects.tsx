@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "../ui/card";
 import { Badge } from "../ui/badge";
+import { Separator } from "../ui/separator";
 
 interface ProjectItemProps {
   title: string;
@@ -95,7 +96,7 @@ const PROJECTS_ESTIMITY: ProjectItemProps[] = [
     description:
       "A virtual office platform that helps you to create your company with virtual adress. You can run your business from anywhere in the world. Cloud powered document platform that will securely handle all mails and packages delivered to the address and digitize them.",
     role: "I contribute to the team by leveraging my expertise in backend/frontend development and Typescript. Additionally, I independently handle the setup of CI/CD pipelines and environments.",
-    dateRange: "2022 - ongoing",
+    dateRange: "2022 - 2024",
     techStack: [
       "Typescript",
       "Next.js",
@@ -118,13 +119,16 @@ const PROJECTS_ESTIMITY: ProjectItemProps[] = [
   },
 ];
 
+const PROJECTS_IVY: ProjectItemProps[] = [];
+
 export const Career: FC = () => {
   return (
     <div className="flex flex-col grow gap-5 p-10 justify-center items-center w-full">
       <p>
-        Right now I am working as Senior Software Developer at Estimity and here
-        is my history.
+        Right now I am working as Fullstack Developer at Ivy.ai and here is my
+        history.
       </p>
+      <Separator className="max-w-[900px]" />
       <p className="min-w-[300px] max-w-[900px]">
         In 2018 I have landed my first job as software developer at ALM Services
         Technology Group. I have been there for 3 years. Beside my main projects
@@ -137,6 +141,8 @@ export const Career: FC = () => {
       {PROJECTS_ALM.map((project) => (
         <ProjectItemCard key={project.title} {...project} />
       ))}
+
+      <Separator className="max-w-[900px]" />
 
       <p className="min-w-[300px] max-w-[900px]">
         Few years later, in 2021 I started working with Estimity, where I am
@@ -156,6 +162,20 @@ export const Career: FC = () => {
         to support and mentor less experienced developers or creating a small
         proof of concept.
       </p>
+
+      <Separator className="max-w-[900px]" />
+
+      <p className="min-w-[300px] max-w-[900px]">
+        Year 2024 I have started working at Ivy.ai where I am Fullstack
+        Developer.
+      </p>
+
+      <h1 className="text-3xl"> Ivy.ai </h1>
+
+      {PROJECTS_IVY.map((project) => (
+        <ProjectItemCard key={project.title} {...project} />
+      ))}
+      <MockProjectItemCard />
     </div>
   );
 };
@@ -197,6 +217,17 @@ const ProjectItemCard: FC<ProjectItemProps> = (props) => {
             </Badge>
           ))}
         </div>
+      </CardContent>
+    </Card>
+  );
+};
+
+const MockProjectItemCard = () => {
+  return (
+    <Card className="w-full min-w-[300px] max-w-[900px] min-h-[200px]">
+      <CardHeader>&nbsp;</CardHeader>
+      <CardContent className="flex flex-col gap-5 place-items-center">
+        <h1 className="text-xl">Will be added soon...</h1>
       </CardContent>
     </Card>
   );

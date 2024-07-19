@@ -15,8 +15,8 @@ export const About = () => {
         <p>
           My first lines of code were written over a decade ago. Professionally,
           my career started {new Date().getFullYear() - 2018} years ago. I am
-          currently a Senior Software Developer at Estimity, where I primarily
-          work with TypeScript and Python to create new and exciting startups.
+          currently a Fullstack Developer at Ivy.ai, where I primarily work with
+          TypeScript.
         </p>
         <br />
         <p>
