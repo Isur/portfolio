@@ -112,7 +112,7 @@ const PROJECTS_ESTIMITY: ProjectItemProps[] = [
     description:
       "A web application that provides a comprehensive overview of energy production and prices (also with forecasts) in Poland. The system collects data and presents it in a user-friendly format. The application features a variety of charts and graphs and list of current capacities.",
     role: "I was responsible for creating whole application.",
-    dateRange: "2024 - ongoing",
+    dateRange: "2024",
     techStack: ["Node.js", "Nestjs", "React", "Docker"],
     roleInProject: "Senior Fullstack Developer",
     company: "Estimity",

@@ -2,9 +2,9 @@ import { FC } from "react";
 import { Cpu, Languages, Workflow, Wrench } from "lucide-react";
 import { Card, CardContent, CardTitle } from "../ui/card";
 
-const programming = ["TypeScript", "Python", "JavaScript", "SQL", "Bash"];
+const programming = ["TypeScript", "Python", "JavaScript", "SQL", "Bash", "Go"];
 const development = ["Agile", "TDD", "REST", "CI/CD"];
-const tools = ["Git", "GitHub", "Docker", "Linux", "nginx"];
+const tools = ["Git", "GitHub", "Docker", "Linux", "nginx", "Ansible"];
 const languages = ["Polish - native", "English - C1"];
 
 export const Skills: FC = () => {

@@ -47,7 +47,6 @@ const SomethingPersonal: FC<{
 );
 
 export const Personal: FC = () => {
-  const videoId = "wnWMS4X1R7E";
   return (
     <div className="flex flex-col grow gap-5 p-10 justify-center items-center min-w-[300px] max-w-[900px]">
       <SomethingPersonal
@@ -92,24 +91,10 @@ export const Personal: FC = () => {
         </DialogContent>
       </Dialog>
       <SomethingPersonal
-        name="YouTube @IsurTyping"
-        skills={["Typing", "Keyboard", "Video editing"]}
-        url="https://youtube.com/@IsurTyping"
-        description="My YouTube channel where I upload typing videos of me practing with tools like monkeytype or typing club. I utilize here my other project - video chat bubbles."
-      />
-      <iframe
-        width="100%"
-        className="aspect-video"
-        src={`https://www.youtube.com/embed/${videoId}`}
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-      />
-      <SomethingPersonal
         name="Dotfiles"
-        skills={["Bash", "Lua", "Linux"]}
+        skills={["Bash", "Lua", "Linux", "Ansible"]}
         url="https://github.com/Isur/dotfiles"
-        description="My dotfiles with install script that should work on debian and arch based linux distros, and on mac os. For debian based there is also server install with configs useful on servers that I connect via ssh. Installation script that prepares configs, install apps, setup ssh keys and prepare directory structures."
+        description="My dotfiles with install script that should work arch based linux distros, and on mac os. There is also server (debian based) install with configs useful on servers that I connect via ssh. Installation ansbile playbook that prepares configs, install apps, setup ssh keys and prepare directory structures."
       />
       <Dialog>
         <DialogTrigger asChild>
