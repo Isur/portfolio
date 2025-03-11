@@ -119,13 +119,26 @@ const PROJECTS_ESTIMITY: ProjectItemProps[] = [
   },
 ];
 
-const PROJECTS_IVY: ProjectItemProps[] = [];
+const PROJECTS_IVY: ProjectItemProps[] = [
+  {
+    title: "Ivy.ai",
+    description:
+      "Ivy.ai is an AI-powered chatbot platform designed to enhance communication and support in higher education, healthcare, and government sectors. It leverages natural language processing and machine learning to provide instant, accurate responses by integrating seamlessly with institutional resources. With multi-channel capabilities—including SMS, email, and interactive voice response—plus multilingual support, Ivy.ai delivers personalized, scalable solutions that streamline operations and improve user engagement.",
+    role: "I was responsible for creating various features, including integration with third-party services, improving performance, two way synchronization with CRMs. I also helped with the development of the backend and frontend.",
+    roleInProject: "Fullstack Developer",
+    dateRange: "2024 - 2025",
+    techStack: ["Typescript", "Node.js", "React", "SQL"],
+    company: "Ivy.ai",
+  },
+];
+
+const PROJECTS_GRAVYTY: ProjectItemProps[] = [];
 
 export const Career: FC = () => {
   return (
     <div className="flex flex-col grow gap-5 p-10 justify-center items-center w-full">
       <p>
-        Right now I am working as Fullstack Developer at Ivy.ai and here is my
+        Right now I am working as Fullstack Developer at Gravyty and here is my
         history.
       </p>
       <Separator className="max-w-[900px]" />
@@ -173,6 +186,18 @@ export const Career: FC = () => {
       <h1 className="text-3xl"> Ivy.ai </h1>
 
       {PROJECTS_IVY.map((project) => (
+        <ProjectItemCard key={project.title} {...project} />
+      ))}
+
+      <Separator className="max-w-[900px]" />
+
+      <p className="min-w-[300px] max-w-[900px]">
+        In 2025 we became something bigger and joined Gravyty.
+      </p>
+
+      <h1 className="text-3xl"> Gravyty </h1>
+
+      {PROJECTS_GRAVYTY.map((project) => (
         <ProjectItemCard key={project.title} {...project} />
       ))}
       <MockProjectItemCard />
