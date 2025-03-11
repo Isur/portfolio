@@ -6,34 +6,34 @@ settings:
 
 dependencies:
   '@radix-ui/react-aspect-ratio':
-    specifier: ^1.0.3
+    specifier: ^1.1.2
     version: 1.1.2(@types/react-dom@18.3.5)(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)
   '@radix-ui/react-dialog':
-    specifier: ^1.0.5
+    specifier: ^1.1.6
     version: 1.1.6(@types/react-dom@18.3.5)(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)
   '@radix-ui/react-dropdown-menu':
-    specifier: ^2.0.6
+    specifier: ^2.1.6
     version: 2.1.6(@types/react-dom@18.3.5)(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)
   '@radix-ui/react-navigation-menu':
-    specifier: ^1.1.4
+    specifier: ^1.2.5
     version: 1.2.5(@types/react-dom@18.3.5)(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)
   '@radix-ui/react-scroll-area':
-    specifier: ^1.0.5
+    specifier: ^1.2.3
     version: 1.2.3(@types/react-dom@18.3.5)(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)
   '@radix-ui/react-separator':
-    specifier: ^1.1.0
+    specifier: ^1.1.2
     version: 1.1.2(@types/react-dom@18.3.5)(@types/react@18.3.18)(react-dom@18.3.1)(react@18.3.1)
   '@radix-ui/react-slot':
-    specifier: ^1.0.2
+    specifier: ^1.1.2
     version: 1.1.2(@types/react@18.3.18)(react@18.3.1)
   '@vercel/analytics':
-    specifier: ^1.2.2
+    specifier: ^1.5.0
     version: 1.5.0(next@14.1.0)(react@18.3.1)
   '@vercel/speed-insights':
-    specifier: ^1.0.10
+    specifier: ^1.2.0
     version: 1.2.0(next@14.1.0)(react@18.3.1)
   class-variance-authority:
-    specifier: ^0.7.0
+    specifier: ^0.7.1
     version: 0.7.1
   clsx:
     specifier: ^2.1.1
@@ -54,13 +54,13 @@ dependencies:
     specifier: ^18.3.1
     version: 18.3.1(react@18.3.1)
   react-icons:
-    specifier: ^5.1.0
+    specifier: ^5.5.0
     version: 5.5.0(react@18.3.1)
   sharp:
-    specifier: ^0.33.3
+    specifier: ^0.33.5
     version: 0.33.5
   tailwind-merge:
-    specifier: ^2.3.0
+    specifier: ^2.6.0
     version: 2.6.0
   tailwindcss-animate:
     specifier: ^1.0.7
@@ -74,13 +74,13 @@ devDependencies:
     specifier: ^6.11.3
     version: 6.11.3
   '@types/node':
-    specifier: ^20.12.7
+    specifier: ^20.17.24
     version: 20.17.24
   '@types/react':
-    specifier: ^18.3.1
+    specifier: ^18.3.18
     version: 18.3.18
   '@types/react-dom':
-    specifier: ^18.3.0
+    specifier: ^18.3.5
     version: 18.3.5(@types/react@18.3.18)
   '@typescript-eslint/eslint-plugin':
     specifier: ^6.21.0
@@ -89,10 +89,10 @@ devDependencies:
     specifier: ^6.21.0
     version: 6.21.0(eslint@8.57.1)(typescript@5.8.2)
   autoprefixer:
-    specifier: ^10.4.19
+    specifier: ^10.4.21
     version: 10.4.21(postcss@8.5.3)
   eslint:
-    specifier: ^8.57.0
+    specifier: ^8.57.1
     version: 8.57.1
   eslint-config-next:
     specifier: 14.1.0
@@ -101,19 +101,19 @@ devDependencies:
     specifier: ^9.1.0
     version: 9.1.0(eslint@8.57.1)
   eslint-plugin-prettier:
-    specifier: ^5.1.3
+    specifier: ^5.2.3
     version: 5.2.3(eslint-config-prettier@9.1.0)(eslint@8.57.1)(prettier@3.5.3)
   eslint-plugin-unused-imports:
-    specifier: ^3.1.0
+    specifier: ^3.2.0
     version: 3.2.0(@typescript-eslint/eslint-plugin@6.21.0)(eslint@8.57.1)
   postcss:
-    specifier: ^8.4.38
+    specifier: ^8.5.3
     version: 8.5.3
   tailwindcss:
-    specifier: ^3.4.3
+    specifier: ^3.4.17
     version: 3.4.17
   typescript:
-    specifier: ^5.4.5
+    specifier: ^5.8.2
     version: 5.8.2
 
 packages:
